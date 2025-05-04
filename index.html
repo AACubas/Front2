@@ -22,6 +22,7 @@
             <li><a href="#biografia">Sobre mí</a></li>
             <li><a href="#peliculas">Películas</a></li>
             <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#" id="modo-btn">🌙</a></li>
         </ul>
     </nav>
 
@@ -30,7 +31,7 @@
         <!-- Sección sobre mí -->
         <section id="biografia">
             <div class="biografia-contenido">
-                <img src="img\BaulbasaurPerfil.png" alt="Avatar de perfil" class="avatar">
+                <img src="img\BaulbasaurPerfil.png" alt="Avatar de perfil" class="avatar" id="avatar">
                 <div class="texto">
                     <h2>Sobre mí</h2>
                     <p>
@@ -107,5 +108,24 @@
             <a href="https://www.linkedin.com/in/alejandro-cubas-139ab1244/" target="_blank">LinkedIn</a>
         </p>
     </footer>
+
+    <script>
+        const avatar = document.getElementById('avatar');
+        const textoBio = document.querySelector('.biografia-contenido .texto');
+        const modoBtn = document.getElementById('modo-btn');
+    
+        // Mostrar/ocultar texto al hacer clic en el avatar
+        avatar.addEventListener('click', () => {
+            textoBio.style.display = (textoBio.style.display === 'none') ? 'block' : 'none';
+        });
+    
+        // Alternar modo oscuro
+        modoBtn.addEventListener('click', () => {
+            document.body.classList.toggle('modo-oscuro');
+            const oscuroActivo = document.body.classList.contains('modo-oscuro');
+            modoBtn.textContent = oscuroActivo ? '☀️' : '🌙';
+        });
+    </script>
+    
 </body>
 </html>
