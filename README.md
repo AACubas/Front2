@@ -1,69 +1,68 @@
-# Práctica Formativa Obligatoria 1
+# Portafolio Personal – Alejandro Ariel
 
-Este proyecto es una landing page de portafolio personal desarrollada como parte de la Práctica Formativa Obligatoria 1 de la materia de Front-end. Se trabajó con HTML y CSS, organizando el contenido de manera semántica y aplicando principios de diseño responsivo.
+Este proyecto es una página web personal desarrollada como práctica para la materia de Front-End. En ella se presentan mis intereses, habilidades y formas de contacto. La base fue construida en el trabajo anterior (PFO1), y en esta segunda entrega (PFO2) se añadieron funcionalidades interactivas y mejoras en la experiencia de usuario utilizando JavaScript, HTML y CSS.
 
----
+## ✨ Cambios realizados en esta versión (PFO2)
 
-## Checklist - Práctica Formativa Obligatoria 1 ✅
+### 🌓 Modo oscuro con alternancia
+- Se agregó una funcionalidad para cambiar entre **modo claro y modo oscuro**.
+- Se implementó como un enlace `<a>` en la barra de navegación para mantener la coherencia visual con los demás ítems del menú.
+- El ícono cambia dinámicamente entre 🌙 (modo claro) y ☀️ (modo oscuro) para ofrecer retroalimentación visual.
 
-### ✔️ Estructura del Proyecto:
-- [x] Archivo `index.html` ubicado en la raíz.
-- [x] Carpeta `css` que contiene el archivo `styles.css`.
-- [x] Carpeta `img` para recursos gráficos.
-- [x] Archivo `README.md` creado, que incluye una breve descripción del TP y este checklist.
-
-### ✔️ Repositorio y Publicación:
-- [x] Repositorio en GitHub creado.
-- [x] Proyecto subido al repositorio.
-- [x] Proyecto publicado utilizando GitHub Pages.
-- [x] En el `README.md` se indica la URL de GitHub Pages.
-
-🔗 URL de GitHub Pages: *https://aacubas.github.io/Front/*
+**Motivo:** Mejora la accesibilidad y permite que el usuario elija el esquema de color según su preferencia visual o contexto (día/noche).
 
 ---
 
-### ✔️ Uso de Google Fonts:
-- [x] Enlace a Google Fonts incluido en la sección `head` del HTML.
-- [x] La tipografía importada se aplica en el sitio.
+### 👆 Mostrar/Ocultar sección "Sobre mí"
+- La funcionalidad se activa al hacer clic sobre la imagen de perfil.
+- Al hacer clic, se oculta o muestra el texto de la biografía, dejando visible solo el avatar cuando está oculto.
 
-**¿Por qué elegiste esa fuente?**  
-*Elegí la fuente Roboto porque (honestamente), me pareció muy bonita.*
-
----
-
-### ✔️ HTML:
-- [x] El documento inicia con la declaración DOCTYPE y usa el atributo `lang="es"`.
-- [x] Se han incluido las metaetiquetas obligatorias: `charset` y `viewport`.
-- [x] Se ha definido un título descriptivo.
-- [x] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.
-
-#### Secciones obligatorias en `main`:
-- [x] Barra de navegación (`nav`) presente y contiene al menos 3 enlaces.
-- [x] Se han insertado al menos 4 comentarios explicativos en el código HTML.
+**Motivo:** Se buscó una interacción más intuitiva, usando el propio contenido como disparador (UX más limpia).
 
 ---
 
-### ✔️ CSS:
-- [x] Existe el archivo `styles.css` con estilos personalizados.
-- [x] Se utilizan selectores basados en clases e identificadores.
-- [x] La tipografía importada desde Google Fonts se aplica correctamente.
+### 🖼️ Efecto visual en la imagen de perfil
+- Al pasar el cursor por encima de la imagen, esta se **agranda ligeramente y muestra una sombra**.
 
-#### Layout y Organización:
-- [x] Se ha organizado el layout (especialmente la sección "tarjetas") utilizando Flexbox o Grid.
-
-**¿Qué ventajas encontraste al utilizar Flexbox o Grid en tu proyecto?**  
-*Permite una mejor organización y adaptación al diseño responsivo. Flexbox fue muy útil para alinear elementos en una sola dimensión y Grid para distribuir tarjetas fácilmente.*
-
-#### Estilización de Componentes:
-- [x] Se han personalizado los estilos de tablas, botones, enlaces y formularios.
-- [x] Se han ajustado las dimensiones de imágenes y contenedores utilizando unidades relativas (%,
-rem, vh).
-- [x] Se ha implementado al menos una animación o transición.
-
-**¿Qué animación o transición implementaste y por qué consideraste que era adecuada para tu proyecto?**  
-*Usé una transición de escala al hacer hover sobre las tarjetas para dar un efecto interactivo moderno
- y llamativo.*
+**Motivo:** El efecto comunica visualmente que la imagen es interactiva, guiando al usuario a hacer clic para alternar la visibilidad del texto.
 
 ---
+
+### 🎨 Otros ajustes visuales
+- Se mantuvo la estética verde original y se amplió para reflejarse correctamente en el modo oscuro.
+- Se adaptaron los estilos generales para asegurar consistencia entre elementos nuevos y existentes (como los enlaces de navegación).
+
+---
+
+
+---
+
+## ✅ Funcionalidades implementadas de PFO2
+
+- [x] Interacción JavaScript con eventos (`click`, `hover`)
+- [x] Manipulación del DOM (`classList.toggle`, estilos dinámicos)
+- [x] Mejora visual de elementos interactivos
+- [x] Uso de buenas prácticas en HTML, CSS y accesibilidad básica
+
+---
+
+## 🚀 Deploy
+
+El sitio está publicado mediante GitHub Pages:
+
+📍 **[Ver sitio en línea](https://aacubas.github.io/Front2/)**
+
+---
+
+## 🧠 Lecciones practicadas
+
+- Cómo crear experiencias de usuario más intuitivas usando efectos visuales y estructuras semánticas.
+- Cómo mantener la coherencia de diseño al incorporar nuevas funcionalidades.
+
+---
+
+
+
+
 
 💬 ¡Gracias por revisar este trabajo!
