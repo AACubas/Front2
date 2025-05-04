@@ -125,7 +125,19 @@
             const oscuroActivo = document.body.classList.contains('modo-oscuro');
             modoBtn.textContent = oscuroActivo ? '☀️' : '🌙';
         });
+
+        let visitas = localStorage.getItem("visitas") || 0;
+        visitas++;
+        localStorage.setItem("visitas", visitas);
+
+        const contador = document.createElement("p");
+        contador.textContent = `Has visitado esta página ${visitas} veces.`;
+        document.body.appendChild(contador);
+
     </script>
+
+
+
     
 </body>
 </html>
