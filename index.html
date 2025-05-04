@@ -135,6 +135,27 @@
         document.body.appendChild(contador);
 
     </script>
+<!--Validacion de formularios-->
+    <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+        const inputs = document.querySelectorAll("form input[required]");
+        let valido = true;
+    
+        inputs.forEach(input => {
+            if (input.value.trim() === "") {
+                valido = false;
+                input.style.border = "2px solid red";
+            } else {
+                input.style.border = "none";
+            }
+        });
+    
+        if (!valido) {
+            e.preventDefault();
+            alert("Por favor, completá todos los campos requeridos.");
+        }
+    });
+    </script>
 
 
 
