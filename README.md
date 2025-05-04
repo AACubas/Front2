@@ -34,6 +34,11 @@ Este proyecto es una página web personal desarrollada como práctica para la ma
 
 ---
 
+#### Menú antes:
+![Menú antes](img/antes.png)
+
+#### Menú después:
+![Menú después](img/despues.png)
 
 ---
 
